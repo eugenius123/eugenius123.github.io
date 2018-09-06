@@ -1,0 +1,276 @@
+.clear {
+  margin-top: 40px;
+}
+.navbar {
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.3);
+  -webkit-transition: background-color 2s ease-in;
+  -moz-transition: background-color 2s ease-in;
+  -ms-transition: background-color 2s ease-in;
+  -o-transition: background-color 2s ease-in;
+  transition: background-color 2s ease-in;
+  position: fixed;
+  /* Set the navbar to fixed position */
+  top: 0;
+  /* Position the navbar at the top of the page */
+  width: 100%;
+  /* Full width */
+  z-index: 1000;
+  color: white;
+  box-shadow: 0px 1px 3px #2a2a2a;
+}
+.navbar a {
+  color: white;
+  text-decoration: none;
+  padding-bottom: 5px;
+  border-bottom: 1px solid transparent;
+  -webkit-transition: border-bottom 0.75s;
+  transition: border-bottom 0.75s;
+}
+.navbar a:hover {
+  border-bottom: 1px solid #3faefd;
+}
+.navbar-dark .navbar-nav .nav-link {
+  color: #f8f9fa;
+  font-size: 20px;
+}
+.front-page {
+  height: 99vh;
+  width: 100%;
+  background: url("background.jpg") no-repeat center;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+.front-page .title {
+  font-size: 80px;
+  font-weight: 400;
+}
+.front-page .summary {
+  font-size: 30px;
+  font-weight: 400;
+}
+.front-page .white-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  height: 60px;
+  width: 140px;
+  border: 4px solid white;
+  margin: auto;
+  border-radius: 5px;
+}
+.front-page .white-button:hover {
+  background-color: white;
+  color: grey;
+}
+.front-page a {
+  color: white;
+}
+.hello-text {
+  padding-top: 8.5em;
+}
+.about-me-strip {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  width: 100%;
+  background: #2e3338;
+  color: white;
+}
+.about-me-strip .title {
+  font-size: 60px;
+  font-weight: 200;
+  color: #fff;
+}
+.about-me-strip .sub-title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 25px;
+  font-weight: 200;
+  color: #fff;
+}
+.about-me {
+  font-size: 16px;
+  font-weight: 200;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.education-experience-skills {
+  font-family: "Montserrat", sans-serif;
+  padding-top: 15px;
+  padding-bottom: 30px;
+  width: 100%;
+  background-color: #2e3338;
+  font-weight: 200;
+}
+.education-experience-skills .line {
+  margin: 0 auto;
+  width: 75px;
+  border-bottom: 1px solid #c0c0c0;
+  margin-bottom: 10px;
+}
+.education-experience-skills strong {
+  font-weight: 400;
+}
+.education-experience-skills .skill-icons i {
+  font-size: 55px;
+  margin: 3px;
+  line-height: 1.3;
+}
+.education-experience-skills .box {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 3px;
+  background: transparent;
+  color: white;
+  padding: 5px 15px 15px 15px;
+  height: 100%;
+  -webkit-transition: box-shadow 0.5s, background 0.5s, color 0.5s;
+  transition: box-shadow 0.5s, background 0.5s, color 0.5s;
+}
+.education-experience-skills .box:hover {
+  -moz-box-shadow: 0 0 10px grey;
+  -webkit-box-shadow: 0 0 10px grey;
+  box-shadow: 0 0 10px grey;
+  background: rgba(211, 208, 201, 0.66);
+  color: black;
+}
+.education-experience-skills .box img {
+  height: 30px;
+}
+.portfolio-strip {
+  font-size: 60px;
+  font-weight: 400;
+  background-image: url("portfolio-strip.jpg");
+  /* The image used */
+  /* Set a specific height */
+  height: 180px;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+.portfolio-strip .line {
+  margin: 0 auto;
+  width: 130px;
+  border-bottom: 2px solid #fedc37;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.portfolio {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center;
+}
+.portfolio img {
+  height: 300px;
+  border: 0px;
+}
+.portfolio .hidden {
+  height: 1px;
+}
+.portfolio .grid {
+  color: transparent;
+  background-size: cover;
+  display: inline-block;
+  position: relative;
+  z-index: 100;
+  -webkit-transition: color 0.5s;
+  transition: color 0.5s;
+}
+.portfolio .grid .line {
+  margin: 0 auto;
+  width: 130px;
+  border-bottom: 1px solid transparent;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  -webkit-transition: border-color 0.5s;
+  transition: border-color 0.5s;
+}
+.portfolio .grid:before {
+  background-image: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 0.95),
+    rgba(255, 255, 255, 0.95)
+  );
+  background-size: cover;
+  content: "";
+  display: block;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  width: 100%;
+  z-index: -100;
+  -webkit-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+}
+.portfolio .grid:hover {
+  color: black;
+}
+.portfolio .grid:hover .line {
+  border-bottom: 1px solid #fedc37;
+}
+.portfolio .grid:hover:before {
+  opacity: 1;
+}
+.portfolio .portfolio-contents {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 250px;
+}
+.portfolio .portfolio-contents .title {
+  font-size: 25px;
+}
+.portfolio .portfolio-contents .summary {
+  font-size: 13px;
+}
+.portfolio #portfolio-1 {
+  background-image: url("webdev.png");
+}
+.portfolio #portfolio-2 {
+  background-image: url("flixster.png");
+}
+.portfolio #portfolio-3 {
+  background-image: url("nomster.png");
+}
+.portfolio #portfolio-4 {
+  background-image: url("todoster.png");
+}
+.portfolio #portfolio-5 {
+  background-image: url("muscle.png");
+}
+.portfolio #portfolio-6 {
+  background-image: url("grammable.png");
+}
+.contact-me {
+  padding-top: 20px;
+  padding-bottom: 10px;
+  background-color: #2e3338;
+  color: white;
+}
+.contact-me i,
+.contact-me a {
+  color: white;
+  text-align: center;
+  font-size: 40px;
+}
+.contact-me i:hover,
+.contact-me a:hover {
+  color: antiquewhite;
+}
